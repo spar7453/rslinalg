@@ -1,12 +1,12 @@
 use num_traits::Num;
 #[derive(Debug, Copy, Clone)]
-pub struct MatrixData<T: Num> {
+pub struct SparseMatrixData<T: Num> {
     row_index: usize,
     col_index: usize,
     value: T
 }
 
-impl <T: Num + Copy> MatrixData<T> {
+impl <T: Num + Copy> SparseMatrixData<T> {
     pub fn new(row_index: usize, col_index: usize, value: T) -> Self {
         Self {
             row_index, col_index, value

@@ -1,6 +1,6 @@
 pub mod structs;
 use structs::shape::*;
-use structs::matrix_data::*;
+use structs::sparse_matrix_data::*;
 use structs::sparse_matrix::*;
 fn main() {
     let shape = Shape::new(1,2);

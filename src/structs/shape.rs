@@ -24,3 +24,9 @@ impl Shape {
         self.col = temp;
     }
 }
+
+impl PartialEq for Shape {
+    fn eq(&self, other: &Self) -> bool {
+        self.row == other.row && self.col == other.col
+    }
+}
