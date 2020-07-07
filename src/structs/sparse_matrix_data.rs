@@ -1,9 +1,9 @@
 use num_traits::Num;
 #[derive(Debug, Copy, Clone)]
 pub struct SparseMatrixData<T: Num> {
-    row_index: usize,
-    col_index: usize,
-    value: T
+    pub row_index: usize,
+    pub col_index: usize,
+    pub value: T
 }
 
 impl <T: Num + Copy> SparseMatrixData<T> {

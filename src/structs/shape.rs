@@ -1,7 +1,7 @@
 #[derive(Debug, Copy, Clone)]
 pub struct Shape {
-    row: usize,
-    col: usize
+    pub row: usize,
+    pub col: usize
 }
 
 impl Shape {
